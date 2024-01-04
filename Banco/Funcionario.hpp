@@ -18,7 +18,9 @@ private:
     
 public:
     Funcionario(Cpf cpf, std::string nome, float salario);
-    std::string getNome();
+    std::string getNome() const;
+    float getSalario() const;
+    virtual float bonificacao() const = 0;
 };
 
 #endif /* Funcionario_hpp */

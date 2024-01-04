@@ -12,5 +12,10 @@ ContaCorrente::ContaCorrente(std::string numero, Titular titular) : Conta(numero
 }
 
 float ContaCorrente::taxaDeSaque() const {
-    return 0.5;
+    return 0.05;
+}
+
+void ContaCorrente::transferePara(Conta &destino, float valor) {
+    this->sacar(valor);
+    destino.depositar(valor);
 }

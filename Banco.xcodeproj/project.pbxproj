@@ -13,6 +13,9 @@
 		FD1F28462B47032A003C89E3 /* Pessoa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28442B47032A003C89E3 /* Pessoa.cpp */; };
 		FD1F28492B4728DB003C89E3 /* ContaPoupanca.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28472B4728DB003C89E3 /* ContaPoupanca.cpp */; };
 		FD1F284C2B474082003C89E3 /* ContaCorrente.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */; };
+		FD1F284F2B474649003C89E3 /* Caixa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F284D2B474649003C89E3 /* Caixa.cpp */; };
+		FD1F28522B474801003C89E3 /* Gerente.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28502B474801003C89E3 /* Gerente.cpp */; };
+		FD1F28552B4748CB003C89E3 /* Autenticavel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28532B4748CB003C89E3 /* Autenticavel.cpp */; };
 		FDB157662B4601AE00E0B2DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB157652B4601AE00E0B2DE /* main.cpp */; };
 		FDB1576E2B4602C200E0B2DE /* Conta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB1576D2B4602C200E0B2DE /* Conta.cpp */; };
 /* End PBXBuildFile section */
@@ -42,6 +45,12 @@
 		FD1F28482B4728DB003C89E3 /* ContaPoupanca.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContaPoupanca.hpp; sourceTree = "<group>"; };
 		FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContaCorrente.cpp; sourceTree = "<group>"; };
 		FD1F284B2B474082003C89E3 /* ContaCorrente.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContaCorrente.hpp; sourceTree = "<group>"; };
+		FD1F284D2B474649003C89E3 /* Caixa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Caixa.cpp; sourceTree = "<group>"; };
+		FD1F284E2B474649003C89E3 /* Caixa.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Caixa.hpp; sourceTree = "<group>"; };
+		FD1F28502B474801003C89E3 /* Gerente.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Gerente.cpp; sourceTree = "<group>"; };
+		FD1F28512B474801003C89E3 /* Gerente.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Gerente.hpp; sourceTree = "<group>"; };
+		FD1F28532B4748CB003C89E3 /* Autenticavel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Autenticavel.cpp; sourceTree = "<group>"; };
+		FD1F28542B4748CB003C89E3 /* Autenticavel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Autenticavel.hpp; sourceTree = "<group>"; };
 		FDB157622B4601AE00E0B2DE /* Banco */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Banco; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB157652B4601AE00E0B2DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FDB1576C2B46024C00E0B2DE /* Conta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Conta.hpp; sourceTree = "<group>"; };
@@ -93,6 +102,12 @@
 				FD1F28482B4728DB003C89E3 /* ContaPoupanca.hpp */,
 				FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */,
 				FD1F284B2B474082003C89E3 /* ContaCorrente.hpp */,
+				FD1F284D2B474649003C89E3 /* Caixa.cpp */,
+				FD1F284E2B474649003C89E3 /* Caixa.hpp */,
+				FD1F28502B474801003C89E3 /* Gerente.cpp */,
+				FD1F28512B474801003C89E3 /* Gerente.hpp */,
+				FD1F28532B4748CB003C89E3 /* Autenticavel.cpp */,
+				FD1F28542B4748CB003C89E3 /* Autenticavel.hpp */,
 			);
 			path = Banco;
 			sourceTree = "<group>";
@@ -154,11 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1F28522B474801003C89E3 /* Gerente.cpp in Sources */,
 				FD1F28432B47023F003C89E3 /* Funcionario.cpp in Sources */,
+				FD1F28552B4748CB003C89E3 /* Autenticavel.cpp in Sources */,
 				FD1F284C2B474082003C89E3 /* ContaCorrente.cpp in Sources */,
 				FD1F283D2B46F5E0003C89E3 /* Titular.cpp in Sources */,
 				FD1F28492B4728DB003C89E3 /* ContaPoupanca.cpp in Sources */,
 				FD1F28462B47032A003C89E3 /* Pessoa.cpp in Sources */,
+				FD1F284F2B474649003C89E3 /* Caixa.cpp in Sources */,
 				FD1F28402B46FA0A003C89E3 /* Cpf.cpp in Sources */,
 				FDB157662B4601AE00E0B2DE /* main.cpp in Sources */,
 				FDB1576E2B4602C200E0B2DE /* Conta.cpp in Sources */,
