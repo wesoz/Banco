@@ -7,7 +7,6 @@
 
 #include "Titular.hpp"
 
-Titular::Titular(Cpf cpf, std::string nome) :
-    cpf(cpf), nome(nome){
+Titular::Titular(Cpf cpf, std::string nome) : Pessoa(cpf, nome) {
     
 }

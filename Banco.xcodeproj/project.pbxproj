@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		FD1F283D2B46F5E0003C89E3 /* Titular.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F283B2B46F5E0003C89E3 /* Titular.cpp */; };
 		FD1F28402B46FA0A003C89E3 /* Cpf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F283E2B46FA0A003C89E3 /* Cpf.cpp */; };
+		FD1F28432B47023F003C89E3 /* Funcionario.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28412B47023F003C89E3 /* Funcionario.cpp */; };
+		FD1F28462B47032A003C89E3 /* Pessoa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28442B47032A003C89E3 /* Pessoa.cpp */; };
+		FD1F28492B4728DB003C89E3 /* ContaPoupanca.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F28472B4728DB003C89E3 /* ContaPoupanca.cpp */; };
+		FD1F284C2B474082003C89E3 /* ContaCorrente.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */; };
 		FDB157662B4601AE00E0B2DE /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB157652B4601AE00E0B2DE /* main.cpp */; };
 		FDB1576E2B4602C200E0B2DE /* Conta.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDB1576D2B4602C200E0B2DE /* Conta.cpp */; };
 /* End PBXBuildFile section */
@@ -30,6 +34,14 @@
 		FD1F283C2B46F5E0003C89E3 /* Titular.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Titular.hpp; sourceTree = "<group>"; };
 		FD1F283E2B46FA0A003C89E3 /* Cpf.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Cpf.cpp; sourceTree = "<group>"; };
 		FD1F283F2B46FA0A003C89E3 /* Cpf.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Cpf.hpp; sourceTree = "<group>"; };
+		FD1F28412B47023F003C89E3 /* Funcionario.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Funcionario.cpp; sourceTree = "<group>"; };
+		FD1F28422B47023F003C89E3 /* Funcionario.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Funcionario.hpp; sourceTree = "<group>"; };
+		FD1F28442B47032A003C89E3 /* Pessoa.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pessoa.cpp; sourceTree = "<group>"; };
+		FD1F28452B47032A003C89E3 /* Pessoa.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Pessoa.hpp; sourceTree = "<group>"; };
+		FD1F28472B4728DB003C89E3 /* ContaPoupanca.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContaPoupanca.cpp; sourceTree = "<group>"; };
+		FD1F28482B4728DB003C89E3 /* ContaPoupanca.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContaPoupanca.hpp; sourceTree = "<group>"; };
+		FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ContaCorrente.cpp; sourceTree = "<group>"; };
+		FD1F284B2B474082003C89E3 /* ContaCorrente.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ContaCorrente.hpp; sourceTree = "<group>"; };
 		FDB157622B4601AE00E0B2DE /* Banco */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Banco; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB157652B4601AE00E0B2DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FDB1576C2B46024C00E0B2DE /* Conta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Conta.hpp; sourceTree = "<group>"; };
@@ -73,6 +85,14 @@
 				FDB1576D2B4602C200E0B2DE /* Conta.cpp */,
 				FD1F283B2B46F5E0003C89E3 /* Titular.cpp */,
 				FD1F283C2B46F5E0003C89E3 /* Titular.hpp */,
+				FD1F28412B47023F003C89E3 /* Funcionario.cpp */,
+				FD1F28422B47023F003C89E3 /* Funcionario.hpp */,
+				FD1F28442B47032A003C89E3 /* Pessoa.cpp */,
+				FD1F28452B47032A003C89E3 /* Pessoa.hpp */,
+				FD1F28472B4728DB003C89E3 /* ContaPoupanca.cpp */,
+				FD1F28482B4728DB003C89E3 /* ContaPoupanca.hpp */,
+				FD1F284A2B474082003C89E3 /* ContaCorrente.cpp */,
+				FD1F284B2B474082003C89E3 /* ContaCorrente.hpp */,
 			);
 			path = Banco;
 			sourceTree = "<group>";
@@ -134,7 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD1F28432B47023F003C89E3 /* Funcionario.cpp in Sources */,
+				FD1F284C2B474082003C89E3 /* ContaCorrente.cpp in Sources */,
 				FD1F283D2B46F5E0003C89E3 /* Titular.cpp in Sources */,
+				FD1F28492B4728DB003C89E3 /* ContaPoupanca.cpp in Sources */,
+				FD1F28462B47032A003C89E3 /* Pessoa.cpp in Sources */,
 				FD1F28402B46FA0A003C89E3 /* Cpf.cpp in Sources */,
 				FDB157662B4601AE00E0B2DE /* main.cpp in Sources */,
 				FDB1576E2B4602C200E0B2DE /* Conta.cpp in Sources */,
