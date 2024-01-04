@@ -51,6 +51,7 @@
 		FD1F28512B474801003C89E3 /* Gerente.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Gerente.hpp; sourceTree = "<group>"; };
 		FD1F28532B4748CB003C89E3 /* Autenticavel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Autenticavel.cpp; sourceTree = "<group>"; };
 		FD1F28542B4748CB003C89E3 /* Autenticavel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Autenticavel.hpp; sourceTree = "<group>"; };
+		FD1F28562B4762BA003C89E3 /* DiaDaSemana.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DiaDaSemana.hpp; sourceTree = "<group>"; };
 		FDB157622B4601AE00E0B2DE /* Banco */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Banco; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB157652B4601AE00E0B2DE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FDB1576C2B46024C00E0B2DE /* Conta.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Conta.hpp; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 				FD1F28512B474801003C89E3 /* Gerente.hpp */,
 				FD1F28532B4748CB003C89E3 /* Autenticavel.cpp */,
 				FD1F28542B4748CB003C89E3 /* Autenticavel.hpp */,
+				FD1F28562B4762BA003C89E3 /* DiaDaSemana.hpp */,
 			);
 			path = Banco;
 			sourceTree = "<group>";

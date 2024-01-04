@@ -36,7 +36,7 @@ int main()
     ContaCorrente terceiraConta("654321", Titular("321.123.111-10", "Third", "senha123"));
     terceiraConta.depositar(200);
     
-    Gerente funcionario(string("321.123.111-10"), "Dias Vinicius", 1000, "senha123");
+    Gerente funcionario(string("321.123.111-10"), "Dias Vinicius", 1000, DiaDaSemana::Terca, "senha123");
     
     cout << "Uma conta: " << umaConta.getSaldo() << " Outra conta: " << umaOutraConta.getSaldo() << endl;
     
