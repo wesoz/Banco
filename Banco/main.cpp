@@ -28,6 +28,13 @@ ostream& operator<<(ostream& cout, const Conta& conta) {
     return cout;
 }
 
+void fazSaque(Conta& conta, float valor) {
+    auto resultado = conta.sacar(valor);
+    if (resultado.first == Conta::ResultadoSaque::Sucesso) {
+        cout << "Seu saldo é de " << resultado.second << endl;
+    }
+}
+
 int main()
 {
     Titular titular(Cpf("123.456.789-10"), "Vinicius", "senha123");
@@ -37,29 +44,46 @@ int main()
     
     ContaPoupanca umaOutraConta("654321", Titular(string("321.123.111-10"), "Wesley", "senha123"));
     umaOutraConta.depositar(1000);
-    umaOutraConta.sacar(100);
+    cout << endl;
+    cout << "---------------" << endl;
+    cout << "| TESTE SAQUE |" << endl;
+    cout << "---------------" << endl;
+    fazSaque(umaOutraConta, 100);
 
     ContaCorrente terceiraConta("654321", Titular("321.123.111-10", "Third", "senha123"));
     terceiraConta.depositar(200);
     
     Gerente funcionario(string("321.123.111-10"), "Dias Vinicius", 1000, DiaDaSemana::Terca, "senha123");
     
+    cout << endl;
+    cout << "---------------" << endl;
+    cout << "| PRINT SALDO |" << endl;
+    cout << "---------------" << endl;
     cout << "Uma conta: " << umaConta.getSaldo() << " Outra conta: " << umaOutraConta.getSaldo() << endl;
     cout << "Terceira conta: " << terceiraConta.getSaldo() << endl;
     
     umaConta.transferePara(terceiraConta, 200);
+
     // operator overload in base class
     (Conta&)terceiraConta += 600;
     
     // operator overload
     terceiraConta += umaConta;
     
+    cout << endl;
+    cout << "-------------------------" << endl;
+    cout << "| TESTE FRIEND FUNCTION |" << endl;
+    cout << "-------------------------" << endl;
     // friend function
     cout << umaConta;
     exibeSaldo(terceiraConta);
     
     fazLogin(titular, "senha123");
     
+    cout << endl;
+    cout << "--------------------" << endl;
+    cout << "| TESTE STATIC ATT |" << endl;
+    cout << "--------------------" << endl;
     cout << "Número de contas: " << Conta::getNumeroDeContas() << endl;
     
     cout << "Nome do funcionário: " << funcionario.getNome() << endl;

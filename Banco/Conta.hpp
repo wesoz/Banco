@@ -10,6 +10,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <utility>
 #include "Titular.hpp"
 
 class Conta
@@ -28,9 +29,12 @@ protected:
     float saldo;
     
 public:
+    enum class ResultadoSaque {
+        Sucesso, ValorNegativo, SaldoInsuficiente
+    };
     Conta(std::string numero, Titular titular);
     virtual ~Conta();
-    void sacar(float valorASacar);
+    std::pair<ResultadoSaque, float> sacar(float valorASacar);
     void depositar(float valorADepositar);
     std::string getNumero() const;
     float getSaldo() const;
