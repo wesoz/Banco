@@ -34,6 +34,7 @@ public:
     std::string getNumero() const;
     float getSaldo() const;
     virtual float taxaDeSaque() const = 0;
+    void operator += (float valorADepositar);
 };
 
 #endif /* Conta_h */

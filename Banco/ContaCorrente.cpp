@@ -15,7 +15,17 @@ float ContaCorrente::taxaDeSaque() const {
     return 0.05;
 }
 
-void ContaCorrente::transferePara(Conta &destino, float valor) {
+void ContaCorrente::transferePara(Conta& destino, float valor) {
     this->sacar(valor);
     destino.depositar(valor);
+}
+
+float ContaCorrente::transfereTudo() {
+    float valor = this->saldo;
+    this->saldo = 0;
+    return valor;
+}
+
+void ContaCorrente::operator+=(ContaCorrente& contaOrigem) {
+    this->depositar(contaOrigem.transfereTudo());
 }

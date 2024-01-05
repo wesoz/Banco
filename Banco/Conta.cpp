@@ -46,6 +46,10 @@ void Conta::depositar(float valorADepositar) {
     this->saldo += valorADepositar;
 }
 
+void Conta::operator+=(float valorADepositar) {
+    this->depositar(valorADepositar);
+}
+
 std::string Conta::getNumero() const {
     return numero;
 }

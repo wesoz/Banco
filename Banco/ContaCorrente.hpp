@@ -13,10 +13,14 @@
 #include "Titular.hpp"
 
 class ContaCorrente final : public Conta {
+protected:
+    float transfereTudo();
+    
 public:
     ContaCorrente(std::string numero, Titular titular);
     float taxaDeSaque() const override;
     void transferePara(Conta& destino, float valor);
+    void operator +=(ContaCorrente& contaOrigem);
 };
 
 #endif /* ContaCorrente_hpp */

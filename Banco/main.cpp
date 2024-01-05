@@ -10,7 +10,6 @@
 using namespace std;
 
 void exibeSaldo(const Conta& conta) {
-    //Conta umaConta("123456", "123.456.789-10", "Vinicius");
     cout << "O saldo da conta é " << conta.getSaldo() << endl;
 }
 
@@ -20,6 +19,11 @@ void fazLogin(const Autenticavel& alguem, string senha) {
     } else {
         cout << "Senha incorreta" << endl;
     }
+}
+
+ostream& operator<<(ostream& cout, const Conta& conta) {
+    cout << "(operator) O saldo da conta é " << conta.getSaldo() << endl;
+    return cout;
 }
 
 int main()
@@ -39,10 +43,14 @@ int main()
     Gerente funcionario(string("321.123.111-10"), "Dias Vinicius", 1000, DiaDaSemana::Terca, "senha123");
     
     cout << "Uma conta: " << umaConta.getSaldo() << " Outra conta: " << umaOutraConta.getSaldo() << endl;
+    cout << "Terceira conta: " << terceiraConta.getSaldo() << endl;
     
     umaConta.transferePara(terceiraConta, 200);
+    (Conta&)terceiraConta += 600;
     
-    exibeSaldo(umaConta);
+    terceiraConta += umaConta;
+    
+    cout << umaConta;
     exibeSaldo(terceiraConta);
     
     fazLogin(titular, "senha123");
