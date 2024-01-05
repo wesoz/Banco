@@ -29,9 +29,9 @@ ostream& operator<<(ostream& cout, const Conta& conta) {
 }
 
 void fazSaque(Conta& conta, float valor) {
-    auto resultado = conta.sacar(valor);
-    if (resultado.first == Conta::ResultadoSaque::Sucesso) {
-        cout << "Seu saldo é de " << resultado.second << endl;
+    std::variant<Conta::ResultadoSaque, float> resultado = conta.sacar(valor);
+    if (auto saldo = std::get_if<float>(&resultado)) {
+        cout << "Seu saldo é de " << *saldo << endl;
     }
 }
 

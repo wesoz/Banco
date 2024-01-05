@@ -30,11 +30,11 @@ protected:
     
 public:
     enum class ResultadoSaque {
-        Sucesso, ValorNegativo, SaldoInsuficiente
+        ValorNegativo, SaldoInsuficiente
     };
     Conta(std::string numero, Titular titular);
     virtual ~Conta();
-    std::pair<ResultadoSaque, float> sacar(float valorASacar);
+    std::variant<ResultadoSaque, float> sacar(float valorASacar);
     void depositar(float valorADepositar);
     std::string getNumero() const;
     float getSaldo() const;

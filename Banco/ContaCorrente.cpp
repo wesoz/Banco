@@ -17,7 +17,7 @@ float ContaCorrente::taxaDeSaque() const {
 
 void ContaCorrente::transferePara(Conta& destino, float valor) {
     auto resultado = this->sacar(valor);
-    if (resultado.first == Conta::ResultadoSaque::Sucesso) {
+    if (resultado.index() == 1) {
         destino.depositar(valor);
     }
 }
