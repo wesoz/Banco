@@ -13,7 +13,7 @@
 #include "Pessoa.hpp"
 #include "Autenticavel.hpp"
 
-class Titular : public Pessoa, public Autenticavel {
+class Titular : public Pessoa<Cpf>, public Autenticavel {
 public:
     Titular(Cpf cpf, std::string nome, std::string senha);
 };
