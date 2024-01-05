@@ -35,6 +35,10 @@ void fazSaque(Conta& conta, float valor) {
     }
 }
 
+template<typename T> T menor(T a, T b) {
+    return a < b ? a : b;
+}
+
 int main()
 {
     Titular titular(Cpf("123.456.789-10"), "Vinicius", "senha123");
@@ -87,6 +91,15 @@ int main()
     cout << "Número de contas: " << Conta::getNumeroDeContas() << endl;
     
     cout << "Nome do funcionário: " << funcionario.getNome() << endl;
+    
+    cout << endl;
+    cout << "---------------" << endl;
+    cout << "| TESTE MENOR |" << endl;
+    cout << "---------------" << endl;
+    cout << menor<Conta&>(umaConta, umaOutraConta);
+    cout << menor(2, 1) << endl;
+    cout << menor(5.5, 5.49) << endl;
+    cout << endl << endl;
     
     return 0;
 }

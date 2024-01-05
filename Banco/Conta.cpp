@@ -62,3 +62,7 @@ float Conta::getSaldo() const {
 int Conta::getNumeroDeContas() {
     return numeroDeContas;
 }
+
+bool Conta::operator < (Conta& outra) {
+    return this->saldo < outra.saldo;
+}
