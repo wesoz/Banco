@@ -22,7 +22,9 @@ void fazLogin(const Autenticavel& alguem, string senha) {
 }
 
 ostream& operator<<(ostream& cout, const Conta& conta) {
+    Titular titular = conta.titular;
     cout << "(operator) O saldo da conta é " << conta.getSaldo() << endl;
+    cout << "(operator) O titular da conta é " << titular.getNome() << endl;
     return cout;
 }
 
@@ -46,10 +48,13 @@ int main()
     cout << "Terceira conta: " << terceiraConta.getSaldo() << endl;
     
     umaConta.transferePara(terceiraConta, 200);
+    // operator overload in base class
     (Conta&)terceiraConta += 600;
     
+    // operator overload
     terceiraConta += umaConta;
     
+    // friend function
     cout << umaConta;
     exibeSaldo(terceiraConta);
     

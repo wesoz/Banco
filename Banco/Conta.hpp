@@ -9,6 +9,7 @@
 #define Conta_h
 #pragma once
 #include <string>
+#include <iostream>
 #include "Titular.hpp"
 
 class Conta
@@ -35,6 +36,7 @@ public:
     float getSaldo() const;
     virtual float taxaDeSaque() const = 0;
     void operator += (float valorADepositar);
+    friend std::ostream& operator<<(std::ostream& cout, const Conta& conta);
 };
 
 #endif /* Conta_h */

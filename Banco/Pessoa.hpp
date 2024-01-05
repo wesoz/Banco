@@ -19,7 +19,7 @@ protected:
     void verificaTamanhoNome();
 public:
     Pessoa(Cpf cpf, std::string nome);
-
+    std::string getNome() const;
 };
 
 #endif /* Pessoa_hpp */
